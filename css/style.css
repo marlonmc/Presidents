@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    display: none;
+}
+#content {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    border: 0px;
+}
+.content .mix {
+    display: none;
+}
+#headline {
+    font-size: 30px;
+    color: aliceblue;
+    float: left;
+    margin: auto;
+    margin-left: 10px;
+}
+nav {
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+}
+li {
+    height: 100%;   
+}
+ul.right {
+    height: 100%;   
+}
+.infoCard {
+    flex-grow: 1;
+    min-width: 289px;
+    max-width: 295px;
+    min-height: 182px;
+    max-height: 190px;
+    margin: 10px 5px;
+    border-radius: 3px;
+    position: relative;
+}
+.icon {
+    height: 36px;
+    margin: auto 1px;
+    vertical-align: middle;
+}
+.face {
+    display: inline;
+    float: left;
+    height: 132px;
+    width: 100px;
+    border-radius: 155px;
+    margin: 25px 5px;
+}
+.order {
+    margin-top: 0px;
+    font-size: 24px;
+    font-family: serif;  
+    font-variant: small-caps;
+}
+.toast {
+    height: 100%; 
+}
+div.modal {
+    z-index: 1000;
+    width: 90%;
+    position: fixed;
+    top: 70px;
+    background-image: url(../img/flags/American-Flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+div.modal-content {
+    padding-bottom: 0px;
+    border: 0px;
+}
+.modal-body {
+    width: 100%;   
+    padding-bottom: 15px;
+    font-size: 1.2em;
+}
+button {
+    float: right;
+    font-size: 2em;
+    padding: 0 0.5em !important;
+}
+.flag {
+    display: flex;
+    width: 120px;
+    margin: auto;
+}
+.party {
+    font-size: 1.3em;
+    line-height: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 30px;
+    background: yellow;
+    color: #444;
+    border: 0;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    background-image: url(../img/icons/ic_arrow_forward_black_36px.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#back-to-top.show {
+    opacity: 0.8;
+    box-shadow: 2px 2px 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>President Info Cards</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="css/materialize.min.css" media="screen">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/materialize.min.js"></script>
+      <script src="js/jquery.mixitup.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.mobile-1.4.5.min.js"></script>
+      <script src="phonegap.js"></script>
+    </head>
+    
+    <body>
+        <div class="containers">
+            <a href="#" id="back-to-top" title="Back to top"></a>
+            <nav>
+                <div class="nav-wrapper indigo">
+                    <span id="headline">
+                      <a href="#">Presidents</a>
+                    </span>
+                    <ul  class="right">
+                      <!-- Dropdown Trigger -->
+                    <li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'><img class="icon" src="img/icons/ic_swap_vert_white_36px.svg" /></a></li>
+                    <li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown2'><img class="icon" src="img/icons/ic_filter_list_white_36px.svg" /></a></li>
+                  </ul>
+                </div>
+            </nav>
+                
+                <!-- Dropdown Structure for Sorting controls-->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#" class="sort" data-sort="myorder:asc">Ascending</a></li>
+                    <li><a href="#" class="sort" data-sort="myorder:desc">Descending</a></li>
+                </ul>
+                
+                <!-- Dropdown Structure for filtering controls-->
+                <ul id='dropdown2' class='dropdown-content'>
+                    <li><a href="#" class="filter" data-filter=".category-1">Democrats</a></li>
+                    <li><a href="#" class="filter" data-filter=".category-2">Republicans</a></li>
+                    <li><a href="#" class="filter" data-filter=".category-3">Whig</a></li>
+                    <li><a href="#" class="filter" data-filter=".category-4">Independent</a></li>
+                    <li><a href="#" class="filter" data-filter=".category-5">Federalist</a></li>
+                    <li><a href="#" class="filter" data-filter=".category-6">Demo-Republic</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" id="showAll" class="filter" data-filter="all">all</a></li>
+                </ul>
+              
+            
+            
+            <div id="content" class="content">
+                <!-- Populated from js -->
+            </div>
+            
+        </div>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
