@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.marlon0008.presidents"
+        versionCode = "03" 
+        version     = "1.0.3" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Presidents</name>
+
+    <description>
+        Learn the US Presidents with this simple, sortable and organizable list of the US Presidents.
+
+	Feel free to send feedback to: marlon.m.clark08@gmail.com 
+    </description>
+
+    <author href="https://build.phonegap.com" email="marlon.clark.82@gmail.com">
+        Marlon Clark
+    </author>
+	
+    <icon src="icon.png" />
+
+    <gap:plugin name="com.purplebrain.adbuddiz.sdk" source="plugins.cordova.io" />
+
+    <access origin="*" />
+    <!-- No permissions needed -->
+    <preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
+    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+   
+</widget>
