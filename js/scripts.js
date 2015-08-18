@@ -3,7 +3,7 @@ $(document).ready(function () {
     document.addEventListener("deviceready", onDeviceReady, false);
   
     function onDeviceReady() {
-            adbuddiz.setAndroidPublisherKey("af553a44-577b-4a89-a511-b57db8c1d0e3");
+            adbuddiz.setAndroidPublisherKey("xxxxxx-xxxxxx-xx-xxxxxxx-xxxxxxx");
             adbuddiz.cacheAds();
           }
   
@@ -128,7 +128,7 @@ $(document).ready(function () {
     var ads = 0;
     $('.close').click(function(){
       ads++;
-      if ((ads % 5) == 0){
+      if ((ads % 3) == 0){
         adbuddiz.showAd();
       }
     });
